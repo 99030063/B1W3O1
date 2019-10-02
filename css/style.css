@@ -4,12 +4,20 @@
 }
 
 .text{
-    margin: 35px 0 0 10px;
+    margin: 35px auto;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(218, 218, 218, 0.555);
     color: #f1f1f1;
-    width: 100%;
+    width: 800px;
     padding: 20px;
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    height: 84vh;
+}
+
+.text::-webkit-scrollbar{
+    display: none;
 }
 
 .fullscreen-bg{
@@ -28,14 +36,24 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
-
-   
 }
+
+@media (min-aspect-ratio: 16/9) {
+    #starField {
+      height: 300%;
+      top: -100%;
+    }
+  }
+  
+  @media (max-aspect-ratio: 16/9) {
+    #starField {
+      width: 300%;
+      left: -100%;
+    }
+  }
 
 body{
     margin: 0;
-    height: 2000px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -44,7 +62,6 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
     position: fixed;
     top: 0;
     width: 100%;
@@ -53,22 +70,33 @@ ul {
   
   li {
     float: left;
+    border-radius: 10px;
   }
   
   li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    margin: 10px;
+    padding: 10px 10px;
     text-decoration: none;
+    border-radius: 20px;
+  }
+  
+  li a:not(.active) {
+    background-color: rgba(255, 115, 0, 0.452);
   }
   
   li a:hover:not(.active) {
-    background-color: #111;
+    background-color: rgb(255, 147, 59);
   }
-  
+
+  .active:hover {
+    background-color: orangered;
+  }
+
   .active {
-    background-color: #4CAF50;
+    background-color: rgb(255, 115, 0);
   }
   
   #contact{
