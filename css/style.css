@@ -14,6 +14,7 @@
     overflow: -moz-scrollbars-none;
     -ms-overflow-style: none;
     height: 84vh;
+    text-align: justify;
 }
 
 .text::-webkit-scrollbar{
@@ -103,3 +104,70 @@ ul {
       float: right;
   }
 
+  .hoofd{
+    margin-left: 35px;
+    margin-top: 25px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  
+  .portretContainer:hover .hoofd {
+    opacity: 0.3;
+  }
+  
+  .portretContainer:hover .middle {
+    opacity: 1;
+  }
+  
+  .socials {
+    color: white;
+    font-size: 16px;
+    margin-left: 15px;
+  }
+
+.portretContainer{
+  float: right;
+  position: relative;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 15px;
+  border-radius: 100%;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  margin: auto;
+}
+
+.linkedIn{
+  width: 20%;
+}
