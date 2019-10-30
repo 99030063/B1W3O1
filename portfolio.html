@@ -6,7 +6,7 @@
    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body onresize="windowResize()">
     <div>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -15,11 +15,8 @@
             <li id="contact"><a href="contact.html">Contact</a></li>
         </ul>
     </div>
-    <div class="fullscreen-bg">
-            <video autoplay muted loop id="starField">
-                <source src="video/starfield.mp4" type="video/mp4">
-                Your browser does not support HTML5 video
-            </video>
+    <div class="fullscreen" id="fullscreen">
+        <canvas id="canvas2d"></canvas>
     </div>
         <br>
         <br>
@@ -48,4 +45,6 @@
     
             <!-- end slipsum code -->
     </div>
+    <script src="js/starfield.js"></script>
+    <script src="js/javascript.js"></script>
 </body>
