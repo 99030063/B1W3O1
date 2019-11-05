@@ -164,3 +164,43 @@ ul {
   z-index: -1;
 }
 
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px auto;
+  grid-template-areas: 
+  "topinfo topinfo topinfo"
+  "project1 project2 project3"
+  "project4 project5 project6";
+}
+
+.gridTopInfo{
+  padding-top: 10px;
+  grid-area: topinfo;
+}
+
+.project1{
+  grid-area: project1;
+}
+.project2{
+  grid-area: project2;
+}
+.project3{
+  grid-area: project3;
+}
+.project4{
+  grid-area: project4;
+}
+
+#projectTile{
+  border: 1px solid black;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 10px;
+}
+
+.loremPicsum{
+  margin-left:auto;
+  margin-right:auto;
+
+}
