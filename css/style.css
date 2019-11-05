@@ -171,7 +171,8 @@ ul {
   grid-template-areas: 
   "topinfo topinfo topinfo"
   "project1 project2 project3"
-  "project4 project5 project6";
+  "project4 project5 project6"
+  "project7 project8 project9";
 }
 
 .gridTopInfo{
@@ -191,6 +192,23 @@ ul {
 .project4{
   grid-area: project4;
 }
+.project5{
+  grid-area: project5;
+}
+.project6{
+  grid-area: project6;
+}
+.project7{
+  grid-area: project7;
+}
+.project8{
+  grid-area: project8;
+}
+.project9{
+  grid-area: project9;
+}
+
+
 
 #projectTile{
   border: 1px solid black;
