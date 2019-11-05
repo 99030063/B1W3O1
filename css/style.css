@@ -3,7 +3,7 @@
     display: block;
 }
 
-.text{
+.content{
     margin: 35px auto;
     bottom: 0;
     background: rgba(218, 218, 218, 0.555);
@@ -17,7 +17,7 @@
     text-align: justify;
 }
 
-.text::-webkit-scrollbar{
+.content::-webkit-scrollbar{
     display: none;
 }
 
