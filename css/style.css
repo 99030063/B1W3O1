@@ -208,8 +208,6 @@ ul {
   grid-area: project9;
 }
 
-
-
 #projectTile{
   border: 1px solid black;
   margin-left:auto;
@@ -218,7 +216,14 @@ ul {
 }
 
 .loremPicsum{
-  margin-left:auto;
-  margin-right:auto;
+  margin: 0 auto;
 
+}
+
+.project1 > img, .project1 > p {
+  width:200px;
+}
+
+.project1 > p{
+  margin: 5px 0;
 }
