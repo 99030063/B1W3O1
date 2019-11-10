@@ -3,7 +3,7 @@
     display: block;
 }
 
-.text{
+.content{
     margin: 35px auto;
     bottom: 0;
     background: rgba(218, 218, 218, 0.555);
@@ -17,7 +17,7 @@
     text-align: justify;
 }
 
-.text::-webkit-scrollbar{
+.content::-webkit-scrollbar{
     display: none;
 }
 
@@ -164,3 +164,61 @@ ul {
   z-index: -1;
 }
 
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px auto;
+  grid-template-areas: 
+  "topinfo topinfo topinfo"
+  "project1 project2 project3"
+  "project4 project5 project6"
+  "project7 project8 project9";
+}
+
+.gridTopInfo{
+  padding-top: 10px;
+  grid-area: topinfo;
+}
+
+.project1{
+  grid-area: project1;
+}
+.project2{
+  grid-area: project2;
+}
+.project3{
+  grid-area: project3;
+}
+.project4{
+  grid-area: project4;
+}
+.project5{
+  grid-area: project5;
+}
+.project6{
+  grid-area: project6;
+}
+.project7{
+  grid-area: project7;
+}
+.project8{
+  grid-area: project8;
+}
+.project9{
+  grid-area: project9;
+}
+
+
+
+#projectTile{
+  border: 1px solid black;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 10px;
+}
+
+.loremPicsum{
+  margin-left:auto;
+  margin-right:auto;
+
+}
