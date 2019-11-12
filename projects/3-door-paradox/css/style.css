@@ -1,0 +1,90 @@
+.body-for-index{
+    background-color: rgb(251, 242, 150);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.body-for-game{
+    background-color: rgb(251, 242, 150);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Raleway', sans-serif;
+
+
+}
+
+#doorContainer{
+    width: 100%;
+    background-image: url("../img/background.png");
+
+}
+
+#doors {
+    display: flex;
+    max-width: 1077px;
+    margin: auto;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    outline-width: 0;
+}
+
+*:focus{
+    outline: none;
+}
+
+.start{
+    width: 75px;
+    height: 75px;
+}
+
+.door{
+    width: 33.33%;
+    float: left;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    padding: 7px 15px;
+
+}
+
+.class-for-index{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.div-for-index {
+    background-color: white;
+    width: 500px;
+    margin: auto; 
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+p{
+    font-size: 20px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+}
