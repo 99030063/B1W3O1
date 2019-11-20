@@ -15,6 +15,8 @@ var grid;
 var cols;
 var rows;
 var w = 40;
+var lastClick = 1
+
 
 var totalMines = 5;
 var number = [1,2,3,4,5,6,7,8];
@@ -30,14 +32,14 @@ var images = {
 
 function preload(){
   //assets
-  image.mine = loadImage("/projects/Minesweeper/img/minefield_mine.png");
-  image.flag = loadImage("/projects/Minesweeper/img/minefield_flag.png");
-  image.cell = loadImage("/projects/Minesweeper/img/minefield_space.png");
-  image.empty = loadImage("/projects/Minesweeper/img/minefield_empty.png")
-  image.wrong = loadImage("/projects/Minesweeper/img/minefield_mine_wrong.png")
-  image.bomb = loadImage("/projects/Minesweeper/img/minefield_mine_death.png")
+  image.mine = loadImage("../Minesweeper/img/minefield_mine.png");
+  image.flag = loadImage("../Minesweeper/img/minefield_flag.png");
+  image.cell = loadImage("../Minesweeper/img/minefield_space.png");
+  image.empty = loadImage("../Minesweeper/img/minefield_empty.png")
+  image.wrong = loadImage("../Minesweeper/img/minefield_mine_wrong.png")
+  image.bomb = loadImage("../Minesweeper/img/minefield_mine_death.png")
   for (var i = 0; i < 8; i++){
-    number[i] = loadImage(`/projects/Minesweeper/img/minefield_${number[i]}.png`);
+    number[i] = loadImage(`../Minesweeper/img/minefield_${number[i]}.png`);
   }
 }
 
@@ -81,10 +83,14 @@ function lose(){
   console.log("GAME OVER")
   for (var i = 0; i < cols; i++){
     for (var j = 0; j < cols; j++){
-      grid[i][j].revealed = true;
+      if(grid[i][j].mine){
+        if(grid[i][j].contains(mouseX, mouseY) != grid[i][j].mine){
+          grid[i][j].revealed = true;
+          image(image.bomb, lastClick, lastClick, lastClick);
+        }
+      }
     }
   }
-
 }
 
 
