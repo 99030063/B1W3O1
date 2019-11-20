@@ -30,14 +30,14 @@ var images = {
 
 function preload(){
   //assets
-  image.mine = loadImage("/../img/minefield_mine.png");
-  image.flag = loadImage("/../img/minefield_flag.png");
-  image.cell = loadImage("/../img/minefield_space.png");
-  image.empty = loadImage("/../img/minefield_empty.png")
-  image.wrong = loadImage("/../img/minefield_mine_wrong.png")
-  image.bomb = loadImage("/../img/minefield_mine_death.png")
+  image.mine = loadImage("/projects/Minesweeper/img/minefield_mine.png");
+  image.flag = loadImage("/projects/Minesweeper/img/minefield_flag.png");
+  image.cell = loadImage("/projects/Minesweeper/img/minefield_space.png");
+  image.empty = loadImage("/projects/Minesweeper/img/minefield_empty.png")
+  image.wrong = loadImage("/projects/Minesweeper/img/minefield_mine_wrong.png")
+  image.bomb = loadImage("/projects/Minesweeper/img/minefield_mine_death.png")
   for (var i = 0; i < 8; i++){
-    number[i] = loadImage(`/../img/minefield_${number[i]}.png`);
+    number[i] = loadImage(`/projects/Minesweeper/img/minefield_${number[i]}.png`);
   }
 }
 
