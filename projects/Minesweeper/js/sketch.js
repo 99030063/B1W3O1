@@ -17,7 +17,7 @@ var rows;
 var w = 40;
 
 var totalMines = 5;
-var number = [];
+var number = [1,2,3,4,5,6,7,8];
 
 var images = {
   mine: undefined,
@@ -30,14 +30,14 @@ var images = {
 
 function preload(){
   //assets
-  image.mine = loadImage("../img/minefield_mine.png");
-  image.flag = loadImage("../img/minefield_flag.png");
-  image.cell = loadImage("../img/minefield_space.png");
-  image.empty = loadImage("../img/minefield_empty.png")
-  image.wrong = loadImage("../img/minefield_mine_wrong.png")
-  image.bomb = loadImage("../img/minefield_mine_death.png")
+  image.mine = loadImage("img/minefield_mine.png");
+  image.flag = loadImage("img/minefield_flag.png");
+  image.cell = loadImage("img/minefield_space.png");
+  image.empty = loadImage("img/minefield_empty.png")
+  image.wrong = loadImage("img/minefield_mine_wrong.png")
+  image.bomb = loadImage("img/minefield_mine_death.png")
   for (var i = 0; i < 8; i++){
-    number[i] = loadImage(`../img/minefield_${i+1}.png`);
+    number[i] = loadImage(`img/minefield_${number[i]}.png`);
   }
 }
 
