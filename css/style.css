@@ -220,7 +220,7 @@ ul {
 
 }
 
-.project1 > img, .project1 > p {
+.project1 > img, .project1 > p, .project > a {
   width:200px;
 }
 
