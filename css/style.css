@@ -215,12 +215,16 @@ ul {
   margin-bottom: 10px;
 }
 
+#projectTile > p{
+  width: 200px;
+}
+
 .loremPicsum{
   margin: 0 auto;
 
 }
 
-.project1 > img, .project1 > p, .project > a {
+.project1 a > img, .project1 > p {
   width:200px;
 }
 
