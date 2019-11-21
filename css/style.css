@@ -209,23 +209,19 @@ ul {
 }
 
 #projectTile{
-  border: 1px solid black;
+  border: 0px solid black;
   margin-left:auto;
   margin-right:auto;
   margin-bottom: 10px;
 }
 
-#projectTile > p{
+#projectTile > p, #projectTile > a > img{
   width: 200px;
 }
 
 .loremPicsum{
   margin: 0 auto;
 
-}
-
-.project1 a > img, .project1 > p {
-  width:200px;
 }
 
 .project1 > p{

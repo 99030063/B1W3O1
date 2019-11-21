@@ -18,7 +18,7 @@ var w = 40;
 var lastClick = 1
 
 
-var totalMines = 5;
+var totalMines = 20;
 var number = [1,2,3,4,5,6,7,8];
 
 var images = {
