@@ -5,17 +5,18 @@ canvas.width = window.innerWidth;
 canvas.height= window.innerHeight;
 
 var c = canvas.getContext("2d") //c is context
-var starDivider = 4
-var numStars = (canvas.width + canvas.height) / starDivider;
+
+var starCounter = 1 //lager getal = meer sterren
+var numStars = (canvas.width + canvas.height) / starCounter;
 var starArray = [];
-var size = 1;
+var size = 2; //formaat van de sterren
 var fl = canvas.width;
 var centerX = canvas.width/2;
 var centerY = canvas.height/2;
-var speedVar = 1.5;
-var blackHole = 100
+var speedVar = 1; //snelheid van de sterren
+var blackHole = 80
 var color = getRandomColor();
-var colorOption = 3;    // 1 = random kleur voor hele veld
+var colorOption = 1;    // 1 = random kleur voor hele veld
                         // 2 = elke frame een random kleur
                         // 3 = alle sterren zijn wit
 
@@ -96,7 +97,7 @@ function windowResize(){
     c.clearRect(0, 0, canvas.width, canvas.height);
     canvas.width = window.innerWidth;
     canvas.height= window.innerHeight;
-    numStars = (canvas.width + canvas.height) / starDivider;
+    numStars = (canvas.width + canvas.height) / starCounter;
     centerX = canvas.width/2;
     centerY = canvas.height/2;
     console.log("resized");

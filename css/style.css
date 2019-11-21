@@ -14,7 +14,7 @@
     overflow: -moz-scrollbars-none;
     -ms-overflow-style: none;
     height: 84vh;
-    text-align: justify;
+    /* text-align: left; */
 }
 
 .content::-webkit-scrollbar{
@@ -209,7 +209,7 @@ ul {
 }
 
 #projectTile{
-  border: 0px solid black;
+  border: 1px solid black;
   margin-left:auto;
   margin-right:auto;
   margin-bottom: 10px;
