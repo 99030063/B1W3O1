@@ -2,10 +2,10 @@
 var canvas = document.getElementById('canvas2d');
 // window.addEventListener("onresize", windowResize);
 canvas.width = window.innerWidth;
-canvas.height= window.innerHeight;
+canvas.height = window.innerHeight;
 
-var c = canvas.getContext("2d") //c is context
-var starDivider = 4
+var c = canvas.getContext("2d"); //c is context
+var starDivider = 4; //lager == meer sterren
 var numStars = (canvas.width + canvas.height) / starDivider;
 var starArray = [];
 var size = 1;
@@ -16,7 +16,7 @@ var speedVar = 2;
 var blackHole = 50
 
 for(var i = 0; i < numStars; i++){
-    starArray[i] = new Star();
+  starArray[i] = new Star();
 }
 
 function Star(){
@@ -30,7 +30,6 @@ function Star(){
 
     this.move = function(){
         this.z = this.z-speed;
-        
         if(this.z<=0){
             this.x = Math.random() * canvas.width;
             this.y = Math.random() * canvas.height;

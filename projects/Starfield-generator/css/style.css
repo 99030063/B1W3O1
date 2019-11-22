@@ -16,3 +16,8 @@ body{
     margin: 0;
     overflow: hidden;
 }
+button{
+  position: fixed;
+  top: 10px;
+  right:10px;
+}
