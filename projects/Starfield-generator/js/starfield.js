@@ -9,12 +9,12 @@ var c = canvas.getContext("2d") //c is context
 var starCounter = 1 //lager getal = meer sterren
 var numStars = (canvas.width + canvas.height) / starCounter;
 var starArray = [];
-var size = 2; //formaat van de sterren
+var size = 1; //formaat van de sterren
 var fl = canvas.width;
 var centerX = canvas.width/2;
 var centerY = canvas.height/2;
 var speedVar = 1; //snelheid van de sterren
-var blackHole = 80
+var blackHole = 50
 var color = getRandomColor();
 var colorOption = 1;    // 1 = random kleur voor hele veld
                         // 2 = elke frame een random kleur

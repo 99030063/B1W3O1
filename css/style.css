@@ -227,3 +227,9 @@ ul {
 .project1 > p{
   margin: 5px 0;
 }
+
+#starfield2d{
+  background: black;
+  width: 200px;
+  height: 200px;
+}
